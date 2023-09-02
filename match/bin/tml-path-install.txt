@@ -1,0 +1,6 @@
+【安装位置】
+Windows：<Steam的安装位置>\Steam\steamapps\common\tModLoader\
+Linux：~/.local/share/Steam/steamapps/common/tModLoader 或 ~/.steam/steam/steamapps/common/tModLoader/
+macOS：Library/Application Support/Steam/steamapps/common/tModLoader/tModLoader.app/Contents/MacOS/
+你可以在 Steam 库中右键 tModLoader，选择“属性”，点击“本地文件”，“浏览……”来打开安装文件夹。
+

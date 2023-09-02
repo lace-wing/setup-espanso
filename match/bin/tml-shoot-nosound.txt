@@ -1,0 +1,8 @@
+【tModLoader 无声音的解决方案之一】
+1. 从 https://github.com/tModLoader/tModLoader/releases/tag/v2022.06.96.4 下载压缩包 tModLoader.zip
+2. 解压并进入 ./Libraries/Native/Windows/
+3. 选中该文件夹中的所有文件并复制
+4. 找到 tModLoader 的安装文件夹，进入文件夹 ./Libraries/Native/Windows/
+5. 粘贴刚刚复制的文件，若有重复的文件，选择“替换”
+6. 重启游戏
+

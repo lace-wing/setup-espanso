@@ -3,8 +3,40 @@ matches:
   - trigger: ":tml.name"
     replace: "tModLoader"
 
+  - trigger: ":tml.path.install"
+    replace: "{{path}}"
+    vars:
+      - name: path
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/bin/tml-path-install.txt"
+
+  - trigger: ":tml.path.logs"
+    replace: "{{path}}"
+    vars:
+      - name: path
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/bin/tml-path-logs.txt"
+
+  - trigger: ":tml.path.saves"
+    replace: "{{path}}"
+    vars:
+      - name: path
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/bin/tml-path-saves.txt"
+
+  - trigger: ":tml.path.enabled"
+    replace: "{{path}}"
+    vars:
+      - name: path
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/bin/tml-path-enbaled.txt"
+
   # modding related
-  - trigger: ":tml.repo"
+  - trigger: ":tml.ghrepo"
     replace: "tModLoader 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader"
 
   - trigger: ":tml.emrepo"
@@ -25,11 +57,28 @@ matches:
   - trigger: ":tml.particle"
     replace: "原版所有 ParticleOrchestra 的演示：https://gist.github.com/Rijam/971b5252707860b65b582093580aa49c"
 
-  - regex: ":lorem\\((?P<loremlength>.\\d)\\),(?P<loremquote>.\\d)\\)"
-    replace: "{{lorem}}"
+  # troubleshooting
+  - trigger: ":tml.report.what"
+    replace: "{{solve}}"
     vars:
-      - name: lorem
+      - name: solve
         type: shell
         params:
-          cmd: "lorem -n $ESPANSO_LOREMLENGTH -q $ESPANSO_LOREMQUOTE"
+          cmd: "cat ~/.config/espanso/match/bin/tml-shoot-report-what.txt"
+
+  - trigger: ":tml.report.where"
+    replace: "{{solve}}"
+    vars:
+      - name: solve
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/bin/tml-shoot-report-where.txt"
+
+  - trigger: ":tml.nosound"
+    replace: "{{solve}}"
+    vars:
+      - name: solve
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/bin/tml-shoot-nosound.txt"
 
