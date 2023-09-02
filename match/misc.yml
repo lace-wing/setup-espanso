@@ -5,4 +5,20 @@ matches:
       - name: lorem
         type: shell
         params:
-          cmd: "lorem -n $ESPANSO_LOREMLENGTH -q $ESPANSO_LOREMQUOTE"
+          cmd: "lorem -s $ESPANSO_LOREMLENGTH -q $ESPANSO_LOREMQUOTE"
+
+  - regex: ":lorem\\((?P<loremlength>[0-9]+),(?P<loremquote>[^0-9]+)\\)"
+    replace: "{{lorem}}"
+    vars:
+      - name: lorem
+        type: shell
+        params:
+          cmd: "lorem -s $ESPANSO_LOREMLENGTH --$ESPANSO_LOREMQUOTE"
+
+  - trigger: ":lorem.lorem"
+    replace: "{{lorem}}"
+    vars:
+      - name: lorem
+        type: shell
+        params:
+          cmd: "lorem -s 3 --lorem"
