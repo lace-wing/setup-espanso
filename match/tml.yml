@@ -25,3 +25,11 @@ matches:
   - trigger: ":tml.particle"
     replace: "原版所有 ParticleOrchestra 的演示：https://gist.github.com/Rijam/971b5252707860b65b582093580aa49c"
 
+  - regex: ":lorem\\((?P<loremlength>.\\d)\\),(?P<loremquote>.\\d)\\)"
+    replace: "{{lorem}}"
+    vars:
+      - name: lorem
+        type: shell
+        params:
+          cmd: "lorem -n $ESPANSO_LOREMLENGTH -q $ESPANSO_LOREMQUOTE"
+

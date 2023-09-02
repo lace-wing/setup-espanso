@@ -1,0 +1,8 @@
+matches:
+  - regex: ":lorem\\((?P<loremlength>[0-9]+),(?P<loremquote>[0-9]+)\\)"
+    replace: "{{lorem}}"
+    vars:
+      - name: lorem
+        type: shell
+        params:
+          cmd: "lorem -n $ESPANSO_LOREMLENGTH -q $ESPANSO_LOREMQUOTE"
