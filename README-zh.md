@@ -11,7 +11,7 @@ Lacewing 的 [Espanso](https://espanso.org) 配置。
 
 此仓库包含 Lacewing 的 Espanso 配置。
 你会看到一些常规文本片段，例如日期和时间。
-不仅如此，还有一些**写作**，**游戏**，尤其是 **Terraria** 和 **tModLoader** 或单纯为了好玩的文本片段。
+不仅如此，还有一些**写作**，**游戏**，尤其是 **Terraria** 和 **tModLoader** 或单纯为了**好玩**的文本片段。
 其中一些文本片段只有**简体中文**的版本。
 
 要使用这些文本片段，你可以浏览配置文件中的 `trigger`，`triggers` 和 `regex` 或使用 Espanso 的搜索栏来了解它们。
