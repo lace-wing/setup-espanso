@@ -1,0 +1,23 @@
+matches:
+  # general replacements
+  - trigger: ":mdy"
+    replace: "{{mdy}}"
+    vars:
+      - name: mdy
+        type: date
+        params:
+          format: "%m/%d/%Y"
+  - trigger: ":ymd"
+    replace: "{{ymd}}"
+    vars:
+      - name: ymd
+        type: date
+        params:
+          format: "%y/%m/%d"
+  - triggers: [":dmy", ":date"]
+    replace: "{{dmy}}"
+    vars:
+      - name: dmy
+        type: date
+        params:
+          format: "%d/%m/%y"

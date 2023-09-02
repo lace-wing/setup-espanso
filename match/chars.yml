@@ -1,0 +1,30 @@
+matches:
+  # characters
+  # ASCII Arrows
+  - triggers: [":->", ":arrow.right"]
+    replace: "→"
+  - triggers: [":<-", ":arrow.left"]
+    replace: "←"
+  - triggers: [":arrow.up"]
+    replace: "↑"
+  - triggers: ["arrow.down"]
+    replace: "↓"
+
+  # Common Currency Symbols
+  - trigger: ':eur'
+    replace: '€'
+  - trigger: ':gbp'
+    replace: '£'
+  - trigger: ':usd'
+    replace: '$'
+  - trigger: ':jpy'
+    replace: '¥'
+  - trigger: ':inr'
+    replace: '₹'
+  - trigger: ':btc'
+    replace: '฿'
+  - trigger: ':eth'
+    replace: 'Ξ'
+
+  - triggers: [':(c)', ':copyright:']
+    replace: '©'

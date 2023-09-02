@@ -1,0 +1,13 @@
+matches:
+  # HTML and Markdown utils
+  - trigger: ':--'
+    replace: '<!-- $|$ -->'
+  - trigger: ':mlink'
+    replace: '[$|$]({{clipboard}})'
+    vars:
+    - name: 'clipboard'
+      type: 'clipboard'
+  - trigger: ':mcollapse'
+    replace: "<details>\n\t<summary></summary>\n\b</details>"
+  - regex: ":hh(?P<level>.\\d*)"
+    replace: "<h{{level}}>$|$</h{{level}}>"
