@@ -1,5 +1,4 @@
 # setup-espanso
-[中文版](README-zh.md)
 Lacewing's [Espanso](https://espanso.org) setup.
 
 ## Usage
