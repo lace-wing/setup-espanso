@@ -1,5 +1,7 @@
 # setup-espanso
+
 [中文版](README-zh.md)
+
 Lacewing's [Espanso](https://espanso.org) setup.
 
 ## Usage
@@ -9,12 +11,12 @@ Read [the documentation](https://espanso.org/docs/get-started/) to get started.
 
 This repo contains Lacewing's personal setup Espanso setup.
 You can expect **general snippets** such as date and time.
-Moreover, there are snippets for **chatting**, for **gaming**, specifically for **Terraria** and **tModLoader**, or simply for **fun**.
+Moreover, there are snippets for **writing**, for **gaming**, specifically for **Terraria** and **tModLoader**, or simply for **fun**.
 Some of the snippets are only written for **Simplified Chinese** at this point (translations are welcomed).
 
 To use those snippet, you can scan through the `trigger`s, `triggers`s and `regex`s or use Espanso's search bar to get an idea of the snippets.
 If you want only a part of these snippets, or a deviated version of them, feel free to modify them.
-Also, the [documentation](https://espanso.org/docs/get-started/) is alwasy there!
+Also, the [documentation](https://espanso.org/docs/get-started/) is always there!
 
 ## Prerequisites
 - having [Espanso](https://espanso.org) installed

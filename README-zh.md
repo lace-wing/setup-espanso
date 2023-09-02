@@ -1,29 +1,32 @@
 # setup-espanso
-Lacewing's [Espanso](https://espanso.org) setup.
 
-## Usage
-[Espanso](https://espanso.org) allows you to use system-wide snippets.
-Of course they are customizable and configurable.
-Read [the documentation](https://espanso.org/docs/get-started/) to get started.
+[English Version](README.md)
 
-This repo contains Lacewing's personal setup Espanso setup.
-You can expect **general snippets** such as date and time.
-Moreover, there are snippets for **chatting**, for **gaming**, specifically for **Terraria** and **tModLoader**, or simply for **fun**.
-Some of the snippets are only written for **Simplified Chinese** at this point (translations are welcomed).
+Lacewing 的 [Espanso](https://espanso.org) 配置。
 
-To use those snippet, you can scan through the `trigger`s, `triggers`s and `regex`s or use Espanso's search bar to get an idea of the snippets.
-If you want only a part of these snippets, or a deviated version of them, feel free to modify them.
-Also, the [documentation](https://espanso.org/docs/get-started/) is alwasy there!
+## 使用方法
+[Espanso](https://espanso.org) 允许你在任何地方插入文本片段。
+当然了，它们是可自定义的，可配置的。
+使用方法参见 [其文档](https://espanso.org/docs/get-started/)。
 
-## Prerequisites
-- having [Espanso](https://espanso.org) installed
-- some snippets require additional shell commands, search `ALERT` in this repo for more information
+此仓库包含 Lacewing 的 Espanso 配置。
+你会看到一些常规文本片段，例如日期和时间。
+不仅如此，还有一些**写作**，**游戏**，尤其是 **Terraria** 和 **tModLoader** 或单纯为了好玩的文本片段。
+其中一些文本片段只有**简体中文**的版本。
 
-## Installation
-1. clone this repo to `~/.config/espanso/`
-2. make sure you have imported the configs to Espanso in `base.yml`
+要使用这些文本片段，你可以浏览配置文件中的 `trigger`，`triggers` 和 `regex` 或使用 Espanso 的搜索栏来了解这些片段。
+如果你只想要其中的一部分，或者是略有不同的版本，你可以随意修改。
+另外，别忘了阅读[文档](https://espanso.org/docs/get-started/)!
+
+## 前置需求
+- 安装好 [Espanso](https://espanso.org)
+- 部分文本片段需要安装额外的 shell 指令，在此仓库中搜索 `ALERT` 查看具体信息
+
+## 安装
+1. 将此仓库克隆到 `~/.config/espanso/`
+2. 确保 Espanso 的配置，`base.yml` 中导入了上述路径
    ```yml
    imports:
      - "~/.config/espanso/"
    ```
-3. read the config files and profit!
+3. 看看有哪些文本片段然后开用！
