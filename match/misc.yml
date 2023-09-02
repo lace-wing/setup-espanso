@@ -1,4 +1,6 @@
 matches:
+
+  # lorems require https://github.com/per9000/lorem
   - regex: ":lorem\\((?P<loremlength>[0-9]+),(?P<loremquote>[0-9]+)\\)"
     replace: "{{lorem}}"
     vars:
