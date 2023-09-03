@@ -1,4 +1,5 @@
 matches:
+ 
   # tModLoader
   - trigger: ":tml.name"
     replace: "tModLoader"
@@ -82,3 +83,9 @@ matches:
         params:
           cmd: "cat ~/.config/espanso/match/bin/tml-shoot-nosound.txt"
 
+  # mods related
+  - trigger: ":tml.mods.wiki.gg"
+    replace: "泰拉瑞亚模组wiki（gg）主页：https://terrariamods.wiki.gg/wiki/Terraria_Mods_Wiki"
+
+  - trigger: ":tml.mods.mor.wiki"
+    replace: "救赎（Mod of Redemption）wiki：https://modofredemption.wiki.gg/wiki/Mod_of_Redemption_Wiki"
