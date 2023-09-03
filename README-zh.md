@@ -14,7 +14,7 @@ Lacewing 的 [Espanso](https://espanso.org) 配置。
 不仅如此，还有一些**写作**，**游戏**，尤其是 **Terraria** 和 **tModLoader** 或单纯为了**好玩**的文本片段。
 其中一些文本片段只有**简体中文**的版本。
 
-要使用这些文本片段，你可以浏览配置文件中的 `trigger`，`triggers` 和 `regex` 或使用 Espanso 的搜索栏来了解它们。
+要使用这些文本片段，你可以浏览配置文件中的 `trigger`，`triggers` 和 `regex` 或使用 Espanso 的搜索栏（<kbd>Alt</kbd>/<kbd>Opt</kbd> + <kbd>空格</kbd>）来了解它们。
 如果你只想要其中的一部分，或者是略有不同的版本，你可以随意修改。
 另外，别忘了阅读[文档](https://espanso.org/docs/get-started/)!
 
