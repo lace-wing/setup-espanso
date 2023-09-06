@@ -10,7 +10,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/bin/tml-path-install.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml-path-install.txt"
 
   - trigger: ":tml.path.logs"
     replace: "{{path}}"
@@ -18,7 +18,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/bin/tml-path-logs.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml-path-logs.txt"
 
   - trigger: ":tml.path.saves"
     replace: "{{path}}"
@@ -26,7 +26,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/bin/tml-path-saves.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml-path-saves.txt"
 
   - trigger: ":tml.path.enabled"
     replace: "{{path}}"
@@ -34,7 +34,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/bin/tml-path-enbaled.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml-path-enbaled.txt"
 
   # modding related
   - trigger: ":tml.ghrepo"
@@ -65,7 +65,7 @@ matches:
       - name: solve
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/bin/tml-shoot-report-what.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml-shoot-report-what.txt"
 
   - trigger: ":tml.report.where"
     replace: "{{solve}}"
@@ -73,7 +73,7 @@ matches:
       - name: solve
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/bin/tml-shoot-report-where.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml-shoot-report-where.txt"
 
   - trigger: ":tml.nosound"
     replace: "{{solve}}"
@@ -81,11 +81,11 @@ matches:
       - name: solve
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/bin/tml-shoot-nosound.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml-shoot-nosound.txt"
 
   # mods related
-  - trigger: ":tml.mods.wiki.gg"
+  - trigger: ":tml.mod.wiki.gg"
     replace: "泰拉瑞亚模组wiki（gg）主页：https://terrariamods.wiki.gg/wiki/Terraria_Mods_Wiki"
 
-  - trigger: ":tml.mods.mor.wiki"
+  - trigger: ":tml.mod.mor.wiki"
     replace: "救赎（Mod of Redemption）wiki：https://modofredemption.wiki.gg/wiki/Mod_of_Redemption_Wiki"
