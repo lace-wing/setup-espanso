@@ -37,11 +37,14 @@ matches:
           cmd: "cat ~/.config/espanso/match/assets/tml-path-enbaled.txt"
 
   # modding related
-  - trigger: ":tml.ghrepo"
+  - trigger: ":tml.repo.main"
     replace: "tModLoader 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader"
 
-  - trigger: ":tml.emrepo"
+  - trigger: ":tml.repo.em"
     replace: "ExampleMod 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader/tree/1.4.4/ExampleMod"
+
+  - trigger: ":tml.repo.wiki"
+    replace: "tModLoader Wiki 的链接：https://github.com/tModLoader/tModLoader/wiki"
 
   - regex: ":tml\\.em\\((?P<searchterm>.+)\\)"
     replace: "ExampleMod 中“{{searchterm}}”的搜索结果：https://github.com/tModLoader/tModLoader/search?utf8=%E2%9C%93&q={{searchterm}}+path:ExampleMod&type=Code"
@@ -54,6 +57,12 @@ matches:
 
   - regex: ":tml\\.ws\\.link\\((?P<searchterm>.+)\\)"
     replace: "https://github.com/search?q=repo%3AtModLoader%2FtModLoader+{{searchterm}}&type=Wikis"
+
+  - trigger: ":tml.doc.menu"
+    replace: "tModLoader 文档菜单的链接：http://docs.tmodloader.net"
+
+  - trigger: ":tml.doc.stable"
+    replace: "tModLoader 稳定版文档的链接：http://docs.tmodloader.net/docs/stable/annotated.html"
 
   - trigger: ":tml.particle"
     replace: "原版所有 ParticleOrchestra 的演示：https://gist.github.com/Rijam/971b5252707860b65b582093580aa49c"
