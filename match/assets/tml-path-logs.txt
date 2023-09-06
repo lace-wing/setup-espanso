@@ -1,4 +1,9 @@
-【安装位置】
-Windows：<Steam的安装位置>\Steam\steamapps\common\tModLoader\
-Linux：~/.local/share/Steam/steamapps/common/tModLoader 或 ~/.steam/steam/steamapps/common/tModLoader/
-macOS：Library/Application Support/Steam/steamapps/common/tModLoader/tModLoader.app/Contents/MacOS/
+【日志文件位置】
+tModLoader 的日志文件在以下路径中的文件夹“tModLoader-Logs”里：
+Windows: <Steam 的安装路径>\Steam\steamapps\common\tModLoader\
+Linux: ~/.local/share/Steam/steamapps/common/tModLoader 或 ~/.steam/steam/steamapps/common/tModLoader/
+macOS: Library/Application Support/Steam/steamapps/common/tModLoader/tModLoader.app/Contents/MacOS/
+你可以通过以下路径中的快捷方式“Logs”找到该文件夹：
+Windows: %UserProfile%\Documents\My Games\Terraria\tModLoader\
+Linux: ~/.local/share/Terraria/tModLoader/ 或 $XDG_DATA_HOME/Terraria/tModLoader/
+macOS: ~/Library/Application support/Terraria/tModLoader/
