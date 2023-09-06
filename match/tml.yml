@@ -34,7 +34,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml-path-enbaled.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml-path-enabled.txt"
 
   # modding related
   - trigger: ":tml.repo.main"
