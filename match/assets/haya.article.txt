@@ -1,5 +1,12 @@
 %s:
   type: Article
   title: %s
-  author: %s
+  author:
+    - %s
   date: %s
+  doi: %s
+  url: %s
+  parent:
+    type: %s
+    title: %s
+    publisher: %s
