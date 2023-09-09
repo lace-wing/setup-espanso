@@ -58,6 +58,12 @@ matches:
   - regex: ":tml\\.ws\\.link\\((?P<searchterm>.+)\\)"
     replace: "https://github.com/search?q=repo%3AtModLoader%2FtModLoader+{{searchterm}}&type=Wikis"
 
+  - regex: ":tml\\.fs\\((?P<searchterm>.+)\\)"
+    replace: "fs49 中“{{searchterm}}”的搜索结果：https://fs49.org/?s={{searchterm}}"
+
+  - regex: ":tml\\.fs\\.link\\((?P<searchterm>.+)\\)"
+    replace: "https://fs49.org/?s={{searchterm}}"
+
   - trigger: ":tml.doc.menu"
     replace: "tModLoader 文档菜单的链接：http://docs.tmodloader.net"
 
