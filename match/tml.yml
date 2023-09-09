@@ -10,7 +10,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml-path-install.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml.path.install.txt"
 
   - trigger: ":tml.path.logs"
     replace: "{{path}}"
@@ -18,7 +18,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml-path-logs.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml.path.logs.txt"
 
   - trigger: ":tml.path.saves"
     replace: "{{path}}"
@@ -26,7 +26,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml-path-saves.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml.path.saves.txt"
 
   - trigger: ":tml.path.enabled"
     replace: "{{path}}"
@@ -34,17 +34,20 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml-path-enabled.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml.path.enabled.txt"
 
   # modding related
-  - trigger: ":tml.repo.main"
+  - trigger: ":tml.link.main"
     replace: "tModLoader 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader"
 
-  - trigger: ":tml.repo.em"
+  - trigger: ":tml.link.em"
     replace: "ExampleMod 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader/tree/1.4.4/ExampleMod"
 
-  - trigger: ":tml.repo.wiki"
+  - trigger: ":tml.link.wiki"
     replace: "tModLoader Wiki 的链接：https://github.com/tModLoader/tModLoader/wiki"
+
+  - trigger: ":tml.link.fs"
+    replace: "fs49，tmod 制作教程的链接：https://fs49.org"
 
   - regex: ":tml\\.em\\((?P<searchterm>.+)\\)"
     replace: "ExampleMod 中“{{searchterm}}”的搜索结果：https://github.com/tModLoader/tModLoader/search?utf8=%E2%9C%93&q={{searchterm}}+path:ExampleMod&type=Code"
@@ -64,10 +67,10 @@ matches:
   - regex: ":tml\\.fs\\.link\\((?P<searchterm>.+)\\)"
     replace: "https://fs49.org/?s={{searchterm}}"
 
-  - trigger: ":tml.doc.menu"
+  - trigger: ":tml.link.doc.menu"
     replace: "tModLoader 文档菜单的链接：http://docs.tmodloader.net"
 
-  - trigger: ":tml.doc.stable"
+  - trigger: ":tml.link.doc.stable"
     replace: "tModLoader 稳定版文档的链接：http://docs.tmodloader.net/docs/stable/annotated.html"
 
   - trigger: ":tml.particle"
@@ -80,7 +83,7 @@ matches:
       - name: solve
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml-shoot-report-what.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml.report.what.txt"
 
   - trigger: ":tml.report.where"
     replace: "{{solve}}"
@@ -88,7 +91,7 @@ matches:
       - name: solve
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml-shoot-report-where.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml.report.where.txt"
 
   - trigger: ":tml.nosound"
     replace: "{{solve}}"
@@ -96,7 +99,7 @@ matches:
       - name: solve
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml-shoot-nosound.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tml.nosound.txt"
 
   # mods related
   - trigger: ":tml.mod.wiki.gg"
