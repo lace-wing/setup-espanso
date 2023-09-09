@@ -1,0 +1,18 @@
+matches:
+  # hayagriva reference snippets
+  
+  - trigger: ":haya.article"
+    replace: "{{output}}"
+    vars:
+      - name: fill
+        type: form
+        params:
+          layout: |
+            Name: [[name]]
+            Title: [[title]]
+            Author: [[author]]
+            Date: [[date]]
+      - name: output
+        type: shell
+        params:
+          cmd: "printf \"$(cat ~/.config/espanso/match/assets/haya.article.txt)\" '{{fill.name}}' '{{fill.title}}' '{{fill.author}}' '{{fill.date}}'"
