@@ -1,14 +1,47 @@
 matches:
   # characters
   # ASCII Arrows
-  - triggers: [":->", ":arrow.right"]
+  - triggers: [":->", ":arrow.r"]
     replace: "→"
-  - triggers: [":<-", ":arrow.left"]
+  - triggers: [":<-", ":arrow.l"]
     replace: "←"
-  - triggers: [":arrow.up"]
+  - triggers: [":arrow.u"]
     replace: "↑"
-  - triggers: ["arrow.down"]
+  - triggers: ["arrow.d"]
     replace: "↓"
+
+  # maths
+
+  - trigger: ":plus.minus"
+    replace: "±"
+  - trigger: ":minus.plus"
+    replace: "∓"
+  - trigger: ":eq.not"
+    replace: "≠"
+  - trigger: ":eq.about"
+    replace: "≈"
+  - trigger: ":^plus"
+    replace: "⁺"
+  - trigger: ":^minus"
+    replace: "⁻"
+
+  - trigger: ":inf"
+    replace: "∞"
+
+  - trigger: ":planck"
+    replace: "ℎ"
+
+  - trigger: ":angle"
+    replace: "∠"
+  - trigger: ":AE"
+    replace: "ᴭ"
+
+  # Greek letters
+
+  - trigger: ":Delta"
+    replace: "Δ"
+  - trigger: "delta"
+    replace: "ᵟ"
 
   # Common Currency Symbols
   - trigger: ':eur'
@@ -17,7 +50,7 @@ matches:
     replace: '£'
   - trigger: ':usd'
     replace: '$'
-  - trigger: ':jpy'
+  - triggers: [':jpy', ':rmb']
     replace: '¥'
   - trigger: ':inr'
     replace: '₹'
@@ -26,5 +59,19 @@ matches:
   - trigger: ':eth'
     replace: 'Ξ'
 
+  # other common symbols
+
+  - trigger: ":check.mark"
+    replace: "✓"
+  - trigger: ":check.box"
+    replace: "✅"
+
+  - trigger: ":cross.mark"
+    replace: "✗"
+  - trigger: ":cross.box"
+    replace: "❎"
+
   - triggers: [':(c)', ':copyright:']
     replace: '©'
+  - trigger: ":^tm"
+    replace: "™"
