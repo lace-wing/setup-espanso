@@ -106,36 +106,36 @@ matches:
           cmd: "cat ~/.config/espanso/match/assets/tml.nosound.txt"
 
   # mods related
-  - trigger: ":tml.mod.wiki.gg"
+  - trigger: ":tmod.wiki.gg"
     replace: "泰拉瑞亚模组wiki（gg）主页：https://terrariamods.wiki.gg/wiki/Terraria_Mods_Wiki"
 
-  - trigger: ":tml.mod.eg.repo"
+  - trigger: ":tmod.eg.repo"
     replace: "流光无际（Everglow）的仓库链接：https://github.com/Solaestas/Everglow"
 
-  - trigger: ":tml.mod.slr.repo"
+  - trigger: ":tmod.slr.repo"
     replace: "星光之河（Starlight River）的仓库链接：https://github.com/ProjectStarlight/StarlightRiver"
-  - trigger: ":tml.mod.slrzh.repo"
+  - trigger: ":tmod.slrzh.repo"
     replace: "星光之河汉化补丁的仓库链接：https://github.com/lyc-Lacewing/StarlightRiverZh"
 
-  - trigger: ":tml.mod.dl.repo"
+  - trigger: ":tmod.dl.repo"
     replace: "龙晶（Dragon Lens）的仓库链接：https://github.com/ScalarVector1/DragonLens"
 
-  - trigger: ":tml.mod.ee.repo"
+  - trigger: ":tmod.ee.repo"
     replace: "无尽征途（Endless Escapade）的仓库链接：https://github.com/EndlessEscapade/EndlessEscapade"
 
-  - trigger: ":tml.mod.mor.repo"
+  - trigger: ":tmod.mor.repo"
     replace: "救赎（Mod of Redemption）的仓库链接：https://github.com/Hallam9K/RedemptionAlpha"
-  - trigger: ":tml.mod.mor.wiki"
+  - trigger: ":tmod.mor.wiki"
     replace: "救赎（Mod of Redemption）wiki：https://modofredemption.wiki.gg/wiki/Mod_of_Redemption_Wiki"
 
-  - trigger: ":tml.mod.sots.repo"
+  - trigger: ":tmod.sots.repo"
     replace: "暗影奥秘（Secrets Of The Shadows）的仓库链接：https://github.com/VortexOfRainbows/SOTS"
 
-  - trigger: ":tml.mod.fargo.m.repo"
+  - trigger: ":tmod.fargo.m.repo"
     replace: "法狗突变（Fargo's Mutant Mod）的仓库链接：https://github.com/Fargowilta/Fargowiltas"
   - trigger: ":tml.repo.fargo.s"
     replace: "法狗魂（Fargo's Souls Mod）的仓库链接：https://github.com/Fargowilta/FargowiltasSouls"
 
-  - trigger: ":tml.mod.ccm.repo"
+  - trigger: ":tmod.ccm.repo"
     replace: "共建模组（Community Content Mod）的仓库链接：https://github.com/sucs28mee/CCMod"
 
