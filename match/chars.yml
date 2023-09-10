@@ -73,5 +73,5 @@ matches:
 
   - triggers: [':(c)', ':copyright:']
     replace: '©'
-  - trigger: ":^tm"
+  - trigger: ":^TM"
     replace: "™"
