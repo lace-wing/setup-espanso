@@ -1,10 +1,10 @@
 matches:
  
   # tModLoader
-  - trigger: ":tml.name"
+  - trigger: ":tm.name"
     replace: "tModLoader"
 
-  - trigger: ":tml.path.install"
+  - trigger: ":tm.path.install"
     replace: "{{path}}"
     vars:
       - name: path
@@ -12,7 +12,7 @@ matches:
         params:
           cmd: "cat ~/.config/espanso/match/assets/tml.path.install.txt"
 
-  - trigger: ":tml.path.logs"
+  - trigger: ":tm.path.logs"
     replace: "{{path}}"
     vars:
       - name: path
@@ -20,7 +20,7 @@ matches:
         params:
           cmd: "cat ~/.config/espanso/match/assets/tml.path.logs.txt"
 
-  - trigger: ":tml.path.saves"
+  - trigger: ":tm.path.saves"
     replace: "{{path}}"
     vars:
       - name: path
@@ -28,7 +28,7 @@ matches:
         params:
           cmd: "cat ~/.config/espanso/match/assets/tml.path.saves.txt"
 
-  - trigger: ":tml.path.enabled"
+  - trigger: ":tm.path.enabled"
     replace: "{{path}}"
     vars:
       - name: path
@@ -37,51 +37,51 @@ matches:
           cmd: "cat ~/.config/espanso/match/assets/tml.path.enabled.txt"
 
   # modding related
-  - trigger: ":tml.link.main"
+  - trigger: ":tm.link.main"
     replace: "tModLoader 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader"
 
-  - trigger: ":tml.link.em"
+  - trigger: ":tm.link.em"
     replace: "ExampleMod 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader/tree/1.4.4/ExampleMod"
 
-  - trigger: ":tml.link.wiki"
+  - trigger: ":tm.link.wiki"
     replace: "tModLoader Wiki 的链接：https://github.com/tModLoader/tModLoader/wiki"
 
-  - trigger: ":tml.link.fs"
+  - trigger: ":tm.link.fs"
     replace: "fs49，tmod 制作教程的链接：https://fs49.org"
 
-  - regex: ":tml\\.em\\((?P<searchterm>.+)\\)"
+  - regex: ":tm\\.em\\((?P<searchterm>.+)\\)"
     replace: "ExampleMod 中“{{searchterm}}”的搜索结果：https://github.com/tModLoader/tModLoader/search?utf8=%E2%9C%93&q={{searchterm}}+path:ExampleMod&type=Code"
 
-  - regex: ":tml\\.em\\.link\\((?P<searchterm>.+)\\)"
+  - regex: ":tm\\.em\\.link\\((?P<searchterm>.+)\\)"
     replace: "https://github.com/tModLoader/tModLoader/search?utf8=%E2%9C%93&q={{searchterm}}+path:ExampleMod&type=Code"
 
-  - regex: ":tml\\.ws\\((?P<searchterm>.+)\\)"
+  - regex: ":tm\\.ws\\((?P<searchterm>.+)\\)"
     replace: "tModLoader Wiki 中“{{searchterm}}”的搜索结果：https://github.com/search?q=repo%3AtModLoader%2FtModLoader+{{searchterm}}&type=Wikis"
 
-  - regex: ":tml\\.ws\\.link\\((?P<searchterm>.+)\\)"
+  - regex: ":tm\\.ws\\.link\\((?P<searchterm>.+)\\)"
     replace: "https://github.com/search?q=repo%3AtModLoader%2FtModLoader+{{searchterm}}&type=Wikis"
 
-  - regex: ":tml\\.fs\\((?P<searchterm>.+)\\)"
+  - regex: ":tm\\.fs\\((?P<searchterm>.+)\\)"
     replace: "fs49 中“{{searchterm}}”的搜索结果：https://fs49.org/?s={{searchterm}}"
 
-  - regex: ":tml\\.fs\\.link\\((?P<searchterm>.+)\\)"
+  - regex: ":tm\\.fs\\.link\\((?P<searchterm>.+)\\)"
     replace: "https://fs49.org/?s={{searchterm}}"
 
-  - trigger: ":tml.link.doc.menu"
+  - trigger: ":tm.link.doc.menu"
     replace: "tModLoader 文档菜单的链接：http://docs.tmodloader.net"
 
-  - trigger: ":tml.link.doc.stable"
+  - trigger: ":tm.link.doc.stable"
     replace: "tModLoader 稳定版文档的链接：http://docs.tmodloader.net/docs/stable/annotated.html"
 
   # mod links
 
   # tml specific things
 
-  - trigger: ":tml.particle"
+  - trigger: ":tm.particle"
     replace: "原版所有 ParticleOrchestra 的演示：https://gist.github.com/Rijam/971b5252707860b65b582093580aa49c"
 
   # troubleshooting
-  - trigger: ":tml.report.what"
+  - trigger: ":tm.report.what"
     replace: "{{solve}}"
     vars:
       - name: solve
@@ -89,7 +89,7 @@ matches:
         params:
           cmd: "cat ~/.config/espanso/match/assets/tml.report.what.txt"
 
-  - trigger: ":tml.report.where"
+  - trigger: ":tm.report.where"
     replace: "{{solve}}"
     vars:
       - name: solve
@@ -97,7 +97,7 @@ matches:
         params:
           cmd: "cat ~/.config/espanso/match/assets/tml.report.where.txt"
 
-  - trigger: ":tml.nosound"
+  - trigger: ":tm.nosound"
     replace: "{{solve}}"
     vars:
       - name: solve
@@ -106,39 +106,39 @@ matches:
           cmd: "cat ~/.config/espanso/match/assets/tml.nosound.txt"
 
   # mods related
-  - trigger: ":tmod.wiki.gg"
+  - trigger: ":tm.wiki.gg"
     replace: "泰拉瑞亚模组wiki（gg）主页：https://terrariamods.wiki.gg/wiki/Terraria_Mods_Wiki"
 
-  - trigger: ":tmod.eg.repo"
+  - trigger: ":tm.eg.repo"
     replace: "流光无际（Everglow）的仓库链接：https://github.com/Solaestas/Everglow"
 
-  - trigger: ":tmod.slr.repo"
+  - trigger: ":tm.slr.repo"
     replace: "星光之河（Starlight River）的仓库链接：https://github.com/ProjectStarlight/StarlightRiver"
-  - trigger: ":tmod.slrzh.repo"
+  - trigger: ":tm.slrzh.repo"
     replace: "星光之河汉化补丁的仓库链接：https://github.com/lyc-Lacewing/StarlightRiverZh"
 
-  - trigger: ":tmod.ig.repo"
+  - trigger: ":tm.ig.repo"
     replace: "更好的体验的仓库链接：https://gitee.com/MyGoold/improve-game"
 
-  - trigger: ":tmod.dl.repo"
+  - trigger: ":tm.dl.repo"
     replace: "龙晶（Dragon Lens）的仓库链接：https://github.com/ScalarVector1/DragonLens"
 
-  - trigger: ":tmod.ee.repo"
+  - trigger: ":tm.ee.repo"
     replace: "无尽征途（Endless Escapade）的仓库链接：https://github.com/EndlessEscapade/EndlessEscapade"
 
-  - trigger: ":tmod.mor.repo"
+  - trigger: ":tm.mor.repo"
     replace: "救赎（Mod of Redemption）的仓库链接：https://github.com/Hallam9K/RedemptionAlpha"
-  - trigger: ":tmod.mor.wiki"
+  - trigger: ":tm.mor.wiki"
     replace: "救赎（Mod of Redemption）wiki：https://modofredemption.wiki.gg/wiki/Mod_of_Redemption_Wiki"
 
-  - trigger: ":tmod.sots.repo"
+  - trigger: ":tm.sots.repo"
     replace: "暗影奥秘（Secrets Of The Shadows）的仓库链接：https://github.com/VortexOfRainbows/SOTS"
 
-  - trigger: ":tmod.fargo.m.repo"
+  - trigger: ":tm.fargo.m.repo"
     replace: "法狗突变（Fargo's Mutant Mod）的仓库链接：https://github.com/Fargowilta/Fargowiltas"
-  - trigger: ":tml.repo.fargo.s"
+  - trigger: ":tm.repo.fargo.s"
     replace: "法狗魂（Fargo's Souls Mod）的仓库链接：https://github.com/Fargowilta/FargowiltasSouls"
 
-  - trigger: ":tmod.ccm.repo"
+  - trigger: ":tm.ccm.repo"
     replace: "共建模组（Community Content Mod）的仓库链接：https://github.com/sucs28mee/CCMod"
 
