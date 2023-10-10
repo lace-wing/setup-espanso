@@ -20,7 +20,7 @@ matches:
         type: shell
         params:
           cmd: "cb ct$ESPANSO_CUT -e $ESPANSO_ENTRY"
-  - trigger: ":cb()"
+  - trigger: ":cb"
     replace: ""
     vars:
       - name: sh
