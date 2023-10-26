@@ -1,4 +1,12 @@
 matches:
+  # let me
+  - regex: ":ddg\\((?P<term>.+)\\)"
+    replace: "{{term}}？让我帮你搜搜：https://duckduckgo.com/?q={{urlenc}}"
+    vars:
+      - name: urlenc
+        type: shell
+        params:
+          cmd: "perl -MURI::Escape -e 'print uri_escape(\"{{term}}\");'"
 
   # ALERT lorems require https://github.com/per9000/lorem
   - regex: ":lorem\\((?P<loremlength>[0-9]+),(?P<loremquote>[0-9]+)\\)"
