@@ -1,7 +1,7 @@
 matches:
   # let me
   - regex: ":ddg\\((?P<term>.+)\\)"
-    replace: "{{term}}？让我帮你搜搜：https://duckduckgo.com/?q={{urlenc}}"
+    replace: "{{term}}？让我帮你搜搜：https://bing.com/search?q={{urlenc}}"
     vars:
       - name: urlenc
         type: shell
