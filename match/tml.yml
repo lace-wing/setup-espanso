@@ -37,40 +37,40 @@ matches:
           cmd: "cat ~/.config/espanso/match/assets/tml.path.enabled.txt"
 
   # modding related
-  - trigger: ":tm.link.main"
+  - trigger: ":tm.l.main"
     replace: "tModLoader 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader"
 
-  - trigger: ":tm.link.em"
+  - trigger: ":tm.l.em"
     replace: "ExampleMod 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader/tree/1.4.4/ExampleMod"
 
-  - trigger: ":tm.link.wiki"
+  - trigger: ":tm.l.wiki"
     replace: "tModLoader Wiki 的链接：https://github.com/tModLoader/tModLoader/wiki"
 
-  - trigger: ":tm.link.fs"
+  - trigger: ":tm.l.fs"
     replace: "fs49，tmod 制作教程的链接：https://fs49.org"
 
   - regex: ":tm\\.em\\((?P<searchterm>.+)\\)"
     replace: "ExampleMod 中“{{searchterm}}”的搜索结果：https://github.com/tModLoader/tModLoader/search?utf8=%E2%9C%93&q={{searchterm}}+path:ExampleMod&type=Code"
 
-  - regex: ":tm\\.em\\.link\\((?P<searchterm>.+)\\)"
+  - regex: ":tm\\.em\\.l\\((?P<searchterm>.+)\\)"
     replace: "https://github.com/tModLoader/tModLoader/search?utf8=%E2%9C%93&q={{searchterm}}+path:ExampleMod&type=Code"
 
   - regex: ":tm\\.ws\\((?P<searchterm>.+)\\)"
     replace: "tModLoader Wiki 中“{{searchterm}}”的搜索结果：https://github.com/search?q=repo%3AtModLoader%2FtModLoader+{{searchterm}}&type=Wikis"
 
-  - regex: ":tm\\.ws\\.link\\((?P<searchterm>.+)\\)"
+  - regex: ":tm\\.ws\\.l\\((?P<searchterm>.+)\\)"
     replace: "https://github.com/search?q=repo%3AtModLoader%2FtModLoader+{{searchterm}}&type=Wikis"
 
   - regex: ":tm\\.fs\\((?P<searchterm>.+)\\)"
     replace: "fs49 中“{{searchterm}}”的搜索结果：https://fs49.org/?s={{searchterm}}"
 
-  - regex: ":tm\\.fs\\.link\\((?P<searchterm>.+)\\)"
+  - regex: ":tm\\.fs\\.l\\((?P<searchterm>.+)\\)"
     replace: "https://fs49.org/?s={{searchterm}}"
 
-  - trigger: ":tm.link.doc.menu"
+  - trigger: ":tm.l.doc.menu"
     replace: "tModLoader 文档菜单的链接：http://docs.tmodloader.net"
 
-  - trigger: ":tm.link.doc.stable"
+  - trigger: ":tm.l.doc.stable"
     replace: "tModLoader 稳定版文档的链接：http://docs.tmodloader.net/docs/stable/annotated.html"
 
   # mod links
@@ -136,7 +136,7 @@ matches:
 
   - trigger: ":tm.fargo.m.repo"
     replace: "法狗突变（Fargo's Mutant Mod）的仓库链接：https://github.com/Fargowilta/Fargowiltas"
-  - trigger: ":tm.repo.fargo.s"
+  - trigger: ":tm.fargo.s.repo"
     replace: "法狗魂（Fargo's Souls Mod）的仓库链接：https://github.com/Fargowilta/FargowiltasSouls"
 
   - trigger: ":tm.ccm.repo"
