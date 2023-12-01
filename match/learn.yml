@@ -2,17 +2,17 @@ matches:
 
   # C#
   - trigger: ":learn.cs"
-    replace: "{{cat}}"
+    replace: "{{catasset}}"
     vars:
-      - name: cat
-        type: shell
+      - name: inj1
+        type: echo
         params:
-          cmd: "cat ~/.config/espanso/match/assets/learn.cs.txt"
+          echo: "learn.cs"
 
   - trigger: ":learn.il"
-    replace: "{{cat}}"
+    replace: "{{catasset}}"
     vars:
-      - name: cat
-        type: shell
+      - name: inj1
+        type: echo
         params:
-          cmd: "cat ~/.config/espanso/match/assets/learn.il.txt"
+          echo: "learn.il"

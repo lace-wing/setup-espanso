@@ -5,36 +5,36 @@ matches:
     replace: "tModLoader"
 
   - trigger: ":tm.path.install"
-    replace: "{{path}}"
+    replace: "{{catasset}}"
     vars:
-      - name: path
-        type: shell
+      - name: inj1
+        type: echo
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tm.path.install.txt"
+          echo: "tm.path.install"
 
   - trigger: ":tm.path.logs"
-    replace: "{{path}}"
+    replace: "{{catasset}}"
     vars:
-      - name: path
-        type: shell
+      - name: inj1
+        type: echo
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tm.path.logs.txt"
+          echo: "tm.path.logs"
 
   - trigger: ":tm.path.saves"
-    replace: "{{path}}"
+    replace: "{{catasset}}"
     vars:
-      - name: path
-        type: shell
+      - name: inj1
+        type: echio
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tm.path.saves.txt"
+          echo: "tm.path.saves"
 
   - trigger: ":tm.path.enabled"
-    replace: "{{path}}"
+    replace: "{{catasset}}"
     vars:
-      - name: path
-        type: shell
+      - name: inj1
+        type: echo
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tm.path.enabled.txt"
+          echo: "tm.path.enabled"
 
   # modding related
   - trigger: ":tm.repo"
