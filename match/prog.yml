@@ -1,20 +1,20 @@
 matches:
 
   # HTML and Markdown utils
-  - trigger: ':--'
+  - trigger: ':h.c'
     replace: '<!-- $|$ -->'
   
-  - trigger: ':mlink'
+  - trigger: ':m.l'
     replace: '[$|$]({{clipboard}})'
     vars:
     - name: 'clipboard'
       type: 'clipboard'
   
-  - trigger: ':mcollapse'
+  - trigger: ':m.collapse'
     replace: "<details>\n\t<summary></summary>\n\b</details>"
   
-  - regex: ":hh(?P<level>.\\d*)"
+  - regex: ":h.h(?P<level>.\\d*)"
     replace: "<h{{level}}>$|$</h{{level}}>"
 
-  - trigger: ":kbd"
+  - trigger: ":h.kbd"
     replace: "<kbd>$|$</kbd>"
