@@ -10,7 +10,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml.path.install.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tm.path.install.txt"
 
   - trigger: ":tm.path.logs"
     replace: "{{path}}"
@@ -18,7 +18,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml.path.logs.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tm.path.logs.txt"
 
   - trigger: ":tm.path.saves"
     replace: "{{path}}"
@@ -26,7 +26,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml.path.saves.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tm.path.saves.txt"
 
   - trigger: ":tm.path.enabled"
     replace: "{{path}}"
@@ -34,7 +34,7 @@ matches:
       - name: path
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml.path.enabled.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tm.path.enabled.txt"
 
   # modding related
   - trigger: ":tm.repo"
@@ -103,7 +103,7 @@ matches:
       - name: solve
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml.report.what.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tm.report.what.txt"
 
   - trigger: ":tm.report.where"
     replace: "{{solve}}"
@@ -111,7 +111,7 @@ matches:
       - name: solve
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml.report.where.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tm.report.where.txt"
 
   - trigger: ":tm.nosound"
     replace: "{{solve}}"
@@ -119,7 +119,7 @@ matches:
       - name: solve
         type: shell
         params:
-          cmd: "cat ~/.config/espanso/match/assets/tml.nosound.txt"
+          cmd: "cat ~/.config/espanso/match/assets/tm.nosound.txt"
 
   # mods related
   - trigger: ":tm.wiki.gg"

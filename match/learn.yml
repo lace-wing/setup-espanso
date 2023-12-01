@@ -1,0 +1,18 @@
+matches:
+
+  # C#
+  - trigger: ":learn.cs"
+    replace: "{{cat}}"
+    vars:
+      - name: cat
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/assets/learn.cs.txt"
+
+  - trigger: ":learn.il"
+    replace: "{{cat}}"
+    vars:
+      - name: cat
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/assets/learn.il.txt"
