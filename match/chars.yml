@@ -72,9 +72,9 @@ matches:
     replace: ' '
   - trigger: ':em3'
     replace: ' '
-  - triggers: [':em4', ':s']
+  - trigger: ':em4'
     replace: ' '
-  - trigger: ':em6'
+  - triggers: [':em6', ':sp']
     replace: ' '
   - trigger: ':fgs'
     replace: ' '
