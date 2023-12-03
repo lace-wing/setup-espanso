@@ -1,6 +1,6 @@
 matches:
   # let me
-  - regex: ":ddg\\((?P<term>.+)\\)"
+  - regex: ":bing\\((?P<term>.+)\\)"
     replace: "{{term}}？让我帮你搜搜：https://bing.com/search?q={{urlenc}}"
     vars:
       - name: urlenc

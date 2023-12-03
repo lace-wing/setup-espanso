@@ -59,6 +59,28 @@ matches:
   - trigger: ':eth'
     replace: 'Ξ'
 
+  # spaces
+  - trigger: ':tab'
+    replace: '	'
+  - trigger: ':nbs'
+    replace: ' '
+  - trigger: ':zws'
+    replace: '​'
+  - trigger: ':ems'
+    replace: ' '
+  - trigger: ':em2'
+    replace: ' '
+  - trigger: ':em3'
+    replace: ' '
+  - trigger: ':em4'
+    replace: ' '
+  - trigger: ':em6'
+    replace: ' '
+  - trigger: ':fgs'
+    replace: ' '
+  - trigger: ':pcs'
+    replace: ' '
+
   # other common symbols
 
   - trigger: ":check.mark"
