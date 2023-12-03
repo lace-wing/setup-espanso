@@ -72,7 +72,7 @@ matches:
     replace: ' '
   - trigger: ':em3'
     replace: ' '
-  - trigger: ':em4'
+  - triggers: [':em4', ':s']
     replace: ' '
   - trigger: ':em6'
     replace: ' '
