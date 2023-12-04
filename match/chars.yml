@@ -74,7 +74,7 @@ matches:
     replace: ' '
   - trigger: ':em4'
     replace: ' '
-  - triggers: [':em6', ':sp']
+  - triggers: [':em6', ':;']
     replace: ' '
   - trigger: ':fgs'
     replace: ' '
