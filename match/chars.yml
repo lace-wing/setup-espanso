@@ -9,6 +9,10 @@ matches:
     replace: "↑"
   - triggers: ["arrow.d"]
     replace: "↓"
+  - triggers: [":<>", ":arrow.LR"]
+    replace: "↔"
+  - triggers: [":arrow.UD"]
+    replace: "↕"
 
   # maths
 
