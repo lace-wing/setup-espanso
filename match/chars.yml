@@ -1,17 +1,17 @@
 matches:
   # characters
   # ASCII Arrows
-  - triggers: [":->", ":arrow.r"]
+  - triggers: [":->", ":arr.r"]
     replace: "→"
-  - triggers: [":<-", ":arrow.l"]
+  - triggers: [":<-", ":arr.l"]
     replace: "←"
-  - triggers: [":arrow.u"]
+  - triggers: [":arr.u"]
     replace: "↑"
-  - triggers: ["arrow.d"]
+  - triggers: [":arr.d"]
     replace: "↓"
-  - triggers: [":<>", ":arrow.LR"]
+  - triggers: [":<>", ":arr.LR"]
     replace: "↔"
-  - triggers: [":arrow.UD"]
+  - triggers: [":arr.UD"]
     replace: "↕"
 
   # maths
